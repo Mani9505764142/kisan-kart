@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation | Kisan Kart</title>
+    <meta name="description" content="View your recorded agricultural product reservation details and reference on Kisan Kart.">
+    
+    <!-- Local Stylesheets (Direct file:// Compatible) -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <aside class="top-notice-banner" aria-label="Official Platform Notice">
+        <div class="container">
+            <div class="banner-item">
+                <span class="banner-badge">Order Recorded</span>
+                <span>Direct Farmer Delivery & Agricultural Input Allocation</span>
+            </div>
+            <div class="banner-item">
+                <span>Verified Cooperative Packaging • Farm Gate Logistics</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- SHARED HEADER -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-link" title="Kisan Kart Homepage">
+                <img src="assets/images/kisan-kart-logo.png" 
+                     alt="Kisan Kart Logo" 
+                     class="brand-logo-img">
+                <div class="brand-meta">
+                    <span class="brand-title">Kisan Kart</span>
+                    <span class="brand-tagline">Your Farming Needs, One Cart.</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="guidance.html" class="nav-link">Get Expert Guidance</a></li>
+                    <li><a href="products.html" class="nav-link">Shop Products</a></li>
+                    <li><a href="index.html#about-us" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="cart.html" class="header-cart-btn" id="headerCartBtn" aria-label="Shopping Cart">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.24-1a1 1 0 00-.986-.78H3z"/>
+                    </svg>
+                    <span class="cart-count-badge" id="cartCountBadge" style="display: none;">0</span>
+                </a>
+
+                <a href="products.html" class="btn btn-primary btn-sm">
+                    Shop Products
+                </a>
+
+                <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="consultation-form-wrap">
+        <div class="container">
+            
+            <div class="consultation-confirmation-panel" id="orderConfirmationPanel">
+                <!-- Icon -->
+                <div class="confirmation-icon-circle">
+                    <svg width="42" height="42" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+
+                <span class="badge badge-primary">Stock Reservation Recorded</span>
+                <h1 style="font-size: 2.25rem; margin: 0.75rem 0 0.5rem 0; color: var(--color-text-main);">
+                    Thank You! Your Request Has Been Recorded
+                </h1>
+                <p style="color: var(--color-text-muted); max-width: 620px; margin: 0 auto 1.5rem auto;">
+                    We have successfully registered your product reservation. Below is your reference number and a summary of your requested agricultural inputs.
+                </p>
+
+                <!-- Order Reference Box -->
+                <div class="confirmation-ref-box">
+                    <div class="ref-label">Order Reservation Reference</div>
+                    <div class="ref-number" id="orderRefNumber">KK-ORD-849201</div>
+                    <div style="font-size: 0.8125rem; color: var(--color-text-subtle); margin-top: 0.25rem;">
+                        Date Registered: <span id="orderDateDisplay">Today</span>
+                    </div>
+                </div>
+
+                <!-- Next Steps Notice -->
+                <div class="warning-notice-box" style="text-align: left; margin-bottom: 2rem;">
+                    <svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                    </svg>
+                    <div>
+                        <strong>Allocation & Verification Process:</strong>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.85rem; color: #92400e;">
+                            Official fertilizer pricing and batch allocation are confirmed by regional logistics coordinators prior to dispatch. Our representative will contact you via your provided mobile number to confirm final pricing, delivery timing, and dispatch status.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ordered Items Table -->
+                <h3 style="font-size: 1.25rem; text-align: left; margin-bottom: 0.75rem; color: var(--color-text-main);">
+                    Reserved Products
+                </h3>
+                <table class="summary-data-table">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Packaging & Grade</th>
+                            <th>Quantity</th>
+                            <th>Price Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="confirmationItemsTable">
+                        <!-- Populated dynamically by JS -->
+                    </tbody>
+                </table>
+
+                <!-- Delivery & Payment Information -->
+                <h3 style="font-size: 1.25rem; text-align: left; margin: 2rem 0 0.75rem 0; color: var(--color-text-main);">
+                    Delivery & Contact Details
+                </h3>
+                <table class="summary-data-table">
+                    <tbody>
+                        <tr>
+                            <th>Recipient Name</th>
+                            <td id="confCustomerName">-</td>
+                        </tr>
+                        <tr>
+                            <th>Contact Mobile</th>
+                            <td id="confCustomerPhone">-</td>
+                        </tr>
+                        <tr>
+                            <th>Delivery Address</th>
+                            <td id="confCustomerAddress">-</td>
+                        </tr>
+                        <tr>
+                            <th>State & PIN Code</th>
+                            <td id="confCustomerLocation">-</td>
+                        </tr>
+                        <tr>
+                            <th>Preferred Payment Method</th>
+                            <td id="confPaymentMethod">Pay on Delivery Confirmation</td>
+                        </tr>
+                        <tr>
+                            <th>Order Pricing Status</th>
+                            <td id="confOrderPricingStatus"><span class="badge badge-pending">Price to be confirmed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Actions -->
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2.5rem;">
+                    <button type="button" class="btn btn-secondary" onclick="window.print()">
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd"/>
+                        </svg>
+                        Print Confirmation
+                    </button>
+                    <a href="products.html" class="btn btn-primary">
+                        Continue Shopping
+                    </a>
+                    <a href="index.html" class="btn btn-secondary">
+                        Return to Homepage
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="assets/images/kisan-kart-logo.png" alt="Kisan Kart Logo" class="footer-logo-img">
+                        <div>
+                            <div class="footer-brand-title">Kisan Kart</div>
+                            <div class="footer-brand-tagline">Your Farming Needs, One Cart.</div>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        A farmer-friendly platform providing structured crop guidance and authentic agricultural product discovery.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Platform Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="guidance.html">Get Expert Guidance</a></li>
+                        <li><a href="consultation.html">Consultation Form</a></li>
+                        <li><a href="products.html">Shop Products</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                        <li><a href="index.html#about-us">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?category=Fertilizers">Fertilizers</a></li>
+                        <li><a href="products.html?category=Crop%20Nutrition">Crop Nutrition</a></li>
+                        <li><a href="products.html">Soil Care</a></li>
+                        <li><a href="products.html">Farming Essentials</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Farmer Support</h4>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Farming Consultation & Guidance</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>support@kisankart.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div>&copy; <span id="currentYear">2026</span> Kisan Kart. All rights reserved.</div>
+                    <div style="color: #84cc16; font-weight: 600;">Kisan Kart • Your Farming Needs, One Cart</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (Direct file:// Compatible) -->
+    <script src="scripts/products.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var order = null;
+            try {
+                var stored = localStorage.getItem("kisan_kart_last_order");
+                if (stored) {
+                    order = JSON.parse(stored);
+                }
+            } catch (e) {
+                console.error("Failed to load last order from localStorage:", e);
+            }
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var refParam = urlParams.get("ref");
+
+            if (!order) {
+                // Safe default placeholder if visited directly
+                order = {
+                    orderRef: refParam || "KK-ORD-729104",
+                    date: new Date().toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }),
+                    customer: {
+                        name: "Registered Farmer",
+                        phone: "9876543210",
+                        address: "Agricultural Farm Post, Sector 4",
+                        state: "Punjab",
+                        pin: "141004"
+                    },
+                    paymentMethod: "Pay on Delivery Confirmation",
+                    items: [
+                        {
+                            name: "IFFCO DAP 18-46-0",
+                            brand: "IFFCO",
+                            grade: "18-46-0",
+                            quantity: 2,
+                            priceStatus: "Price to be confirmed"
+                        }
+                    ],
+                    totalQuantity: 2
+                };
+            }
+
+            // Render order fields
+            var refEl = document.getElementById("orderRefNumber");
+            if (refEl) refEl.textContent = order.orderRef || refParam || "KK-ORD-729104";
+
+            var dateEl = document.getElementById("orderDateDisplay");
+            if (dateEl) dateEl.textContent = order.date || "Today";
+            
+            if (order.customer) {
+                var nameEl = document.getElementById("confCustomerName");
+                if (nameEl) nameEl.textContent = order.customer.name || "-";
+
+                var phoneEl = document.getElementById("confCustomerPhone");
+                if (phoneEl) phoneEl.textContent = "+91 " + (order.customer.phone || "-");
+
+                var addrEl = document.getElementById("confCustomerAddress");
+                if (addrEl) addrEl.textContent = order.customer.address || "-";
+
+                var locEl = document.getElementById("confCustomerLocation");
+                if (locEl) locEl.textContent = (order.customer.state || "-") + " — PIN " + (order.customer.pin || "-");
+            }
+
+            var payMethodEl = document.getElementById("confPaymentMethod");
+            if (payMethodEl) payMethodEl.textContent = order.paymentMethod || "Pay on Delivery Confirmation";
+
+            var pricingStatusEl = document.getElementById("confOrderPricingStatus");
+            if (pricingStatusEl) {
+                if (order.financials && order.financials.isCalculable) {
+                    pricingStatusEl.innerHTML = '<span style="font-size: 1.1rem; font-weight: 800; color: var(--color-primary-dark); font-family: var(--font-heading);">₹' + order.financials.total.toLocaleString("en-IN") + '</span> <span class="badge badge-verified" style="margin-left: 0.5rem;">Total Confirmed</span>';
+                } else {
+                    pricingStatusEl.innerHTML = '<span class="badge badge-pending">Price to be confirmed</span>';
+                }
+            }
+
+            // Render Items
+            var itemsTable = document.getElementById("confirmationItemsTable");
+            if (itemsTable && order.items && order.items.length) {
+                var rows = "";
+                for (var i = 0; i < order.items.length; i++) {
+                    var item = order.items[i];
+                    var bagText = item.bagSize ? (item.bagSize + ' Bag') : '50 kg Bag';
+                    var priceText = "";
+                    if (typeof item.price === "number") {
+                        var noteStr = item.priceNote ? (' (' + item.priceNote + ')') : '';
+                        priceText = '₹' + (item.price * item.quantity).toLocaleString("en-IN") + noteStr;
+                    } else {
+                        priceText = item.priceStatus || "Price to be confirmed";
+                    }
+
+                    rows += '<tr>' +
+                        '<td style="font-weight: 700; color: var(--color-text-main);">' + item.name + '</td>' +
+                        '<td>' + (item.grade || "Standard Grade") + ' • ' + bagText + '</td>' +
+                        '<td style="font-weight: 700;">' + item.quantity + ' bag(s)</td>' +
+                        '<td style="color: var(--color-primary-dark); font-weight: 700;">' + priceText + '</td>' +
+                    '</tr>';
+                }
+                itemsTable.innerHTML = rows;
+            }
+        });
+    </script>
+</body>
+</html>

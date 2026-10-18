@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisan Kart | Your Farming Needs, One Cart — Agricultural Shopping & Guidance</title>
+    <meta name="description" content="Kisan Kart brings agricultural product discovery and farming guidance together in one convenient place. Explore certified fertilizers and request agronomy guidance.">
+    
+    <!-- Local Stylesheets (Direct file:// Compatible) -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <aside class="top-notice-banner" aria-label="Official Platform Notice">
+        <div class="container">
+            <div class="banner-item">
+                <span class="banner-badge">Farmer First</span>
+                <span>Connecting Farmers with Genuine Inputs & Structured Guidance</span>
+            </div>
+            <div class="banner-item">
+                <span>Direct Cooperative Packaging • Agronomy Support</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- SHARED SITE HEADER -->
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- Left: Official Kisan Kart Logo -->
+            <a href="index.html" class="brand-link" title="Kisan Kart Homepage">
+                <img src="assets/images/kisan-kart-logo.png" 
+                     alt="Kisan Kart - Your Farming Needs, One Cart Logo" 
+                     class="brand-logo-img">
+                <div class="brand-meta">
+                    <span class="brand-title">Kisan Kart</span>
+                    <span class="brand-tagline">Your Farming Needs, One Cart.</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="guidance.html" class="nav-link">Get Expert Guidance</a></li>
+                    <li><a href="products.html" class="nav-link">Shop Products</a></li>
+                    <li><a href="index.html#about-us" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action Tools -->
+            <div class="header-actions">
+                <form class="header-search-form" id="headerSearchForm" role="search">
+                    <input type="text" 
+                           class="header-search-input" 
+                           id="headerSearchInput" 
+                           placeholder="Search fertilizers..." 
+                           aria-label="Search agricultural products">
+                    <button type="submit" class="header-search-btn" aria-label="Submit search">
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <a href="cart.html" class="header-cart-btn" id="headerCartBtn" aria-label="Shopping Cart">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.24-1a1 1 0 00-.986-.78H3z"/>
+                    </svg>
+                    <span class="cart-count-badge" id="cartCountBadge" style="display: none;">0</span>
+                </a>
+
+                <a href="guidance.html" class="btn btn-primary btn-sm" id="headerGuidanceBtn">
+                    Get Guidance
+                </a>
+
+                <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION 9.1: HERO SECTION -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge-pill">
+                            <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Two Dedicated Routes for Every Grower
+                        </div>
+                        <h1 class="hero-title">
+                            Better Farming Starts With the <span>Right Guidance</span>.
+                        </h1>
+                        <p class="hero-lead">
+                            Understand your farming needs, explore agricultural products, and find a convenient way to take your next step.
+                        </p>
+                        
+                        <div class="hero-cta-group">
+                            <a href="guidance.html" class="btn btn-primary btn-lg" id="heroGuidanceCta">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                                </svg>
+                                Get Expert Guidance
+                            </a>
+                            <a href="products.html" class="btn btn-secondary btn-lg" id="heroShopCta">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.24-1a1 1 0 00-.986-.78H3z"/>
+                                </svg>
+                                Shop Products
+                            </a>
+                        </div>
+
+                        <div class="hero-trust-bar">
+                            <div class="trust-item">
+                                <svg class="trust-icon" width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Cooperative & Verified Brands</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg class="trust-icon" width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Structured Crop Diagnosis</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg class="trust-icon" width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                                    <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Farmer-Friendly Access</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Showcase Card -->
+                    <div class="hero-showcase">
+                        <div class="showcase-header">
+                            <span class="showcase-tag">Select Your Pathway</span>
+                            <h3 class="showcase-title">How would you like to proceed today?</h3>
+                        </div>
+                        <div class="showcase-cards">
+                            <a href="guidance.html" class="showcase-card-mini">
+                                <div class="mini-card-icon mini-icon-guidance">
+                                    <svg width="24" height="24" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a10.957 10.957 0 01-1.204 2.87C3.336 12.35 2 13.987 2 16a1 1 0 001 1h14a1 1 0 001-1c0-2.013-1.336-3.65-2.046-5.079a10.957 10.957 0 01-1.204-2.87l2.644-1.13a1 1 0 000-1.84l-7-3zM5.143 15c.421-1.19 1.13-2.316 2.073-3.238.164.55.38 1.082.646 1.588A6.98 6.98 0 005.143 15zm4.857-8.083L4.936 4.67 10 2.5l5.064 2.17L10 6.917zm2.784 4.845c.943.922 1.652 2.048 2.073 3.238a6.98 6.98 0 00-2.719-1.65c.266-.506.482-1.038.646-1.588z"/>
+                                    </svg>
+                                </div>
+                                <div class="mini-card-info">
+                                    <h4>Route 1: Agricultural Guidance</h4>
+                                    <p>Describe your crop concern and arrange an agronomy consultation.</p>
+                                </div>
+                                <span class="mini-card-arrow">&rarr;</span>
+                            </a>
+
+                            <a href="products.html" class="showcase-card-mini">
+                                <div class="mini-card-icon mini-icon-shop">
+                                    <svg width="24" height="24" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"/>
+                                        <path fill-rule="evenodd" d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div class="mini-card-info">
+                                    <h4>Route 2: Direct Product Shopping</h4>
+                                    <p>Browse verified fertilizers, inspect packaging, and reserve inputs.</p>
+                                </div>
+                                <span class="mini-card-arrow">&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9.2: TWO PRIMARY SERVICE CARDS -->
+        <section class="section-options">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pretitle">Farmer-Centric Architecture</span>
+                    <h2 class="section-title">Designed for Your Specific Situation</h2>
+                    <p class="section-subtitle">
+                        Whether you need expert help deciding what to apply or already know your required fertilizer grades, Kisan Kart provides an unhindered path.
+                    </p>
+                </div>
+
+                <div class="options-grid">
+                    <!-- CARD A — GET EXPERT GUIDANCE -->
+                    <div class="option-card option-card-guidance">
+                        <span class="badge badge-primary option-badge">ROUTE 1: FARMING GUIDANCE</span>
+                        <div class="option-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <h3 class="option-title">Get Expert Guidance</h3>
+                        <p class="option-desc">
+                            Select between an interactive online consultation or an in-person field visit to resolve crop nutrition challenges with expert agronomists.
+                        </p>
+
+                        <div style="background-color: var(--color-bg-body); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1rem 1.25rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.85rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--color-border-subtle); padding-bottom: 0.65rem;">
+                                <div>
+                                    <strong style="color: var(--color-text-main); font-size: 0.95rem;">1. Online Consultation</strong>
+                                    <div style="font-size: 0.785rem; color: var(--color-text-muted);">45–60 min &bull; Online meeting &bull; No travel/food fees</div>
+                                </div>
+                                <span style="font-weight: 800; font-size: 1.15rem; color: var(--color-primary-dark);">₹2,499</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong style="color: var(--color-text-main); font-size: 0.95rem;">2. Field Visit Consultation</strong>
+                                    <div style="font-size: 0.785rem; color: var(--color-text-muted);">In-person visit &bull; Travel &amp; food charged separately</div>
+                                </div>
+                                <span style="font-weight: 800; font-size: 1.15rem; color: var(--color-primary-dark);">₹5,999<small style="font-size: 0.7rem; font-weight: 600; color: #854d0e;"> +exp</small></span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-features">
+                            <div class="option-feature-item">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Structured questionnaire with crop stage &amp; soil diagnosis</span>
+                            </div>
+                            <div class="option-feature-item">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Field visit fee breakdown: ₹5,999 + travel &amp; food expenses</span>
+                            </div>
+                            <div class="option-feature-item">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Transparent pricing with no product purchase obligation</span>
+                            </div>
+                        </div>
+
+                        <div class="option-footer" style="display: flex; flex-direction: column; gap: 0.65rem;">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem;">
+                                <a href="consultation.html?type=online" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.65rem 0.5rem; text-align: center;">
+                                    Book Online (₹2,499)
+                                </a>
+                                <a href="consultation.html?type=field" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.65rem 0.5rem; text-align: center; border: 1px solid var(--color-primary); color: var(--color-primary);">
+                                    Book Visit (₹5,999)
+                                </a>
+                            </div>
+                            <a href="guidance.html" style="text-align: center; font-size: 0.85rem; font-weight: 600; color: var(--color-primary-dark); padding-top: 0.25rem;">
+                                View Full Guidance &amp; Fee Breakdown &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CARD B — SHOP PRODUCTS DIRECTLY -->
+                    <div class="option-card option-card-shop">
+                        <span class="badge badge-verified option-badge">ROUTE 2: DIRECT CATALOGUE</span>
+                        <div class="option-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.24-1a1 1 0 00-.986-.78H3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="option-title">Already Know What You Need?</h3>
+                        <p class="option-desc">
+                            Explore agricultural products, review available information, and add suitable items to your cart.
+                        </p>
+                        
+                        <div class="option-features">
+                            <div class="option-feature-item">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Browse authentic cooperative & fertilizer formulations</span>
+                            </div>
+                            <div class="option-feature-item">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Transparent N-P-K-S ratios verified from packaging</span>
+                            </div>
+                            <div class="option-feature-item">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Immediate cart reservation and clear pricing notifications</span>
+                            </div>
+                            <div class="option-feature-item">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>No forced consultation required</span>
+                            </div>
+                        </div>
+
+                        <div class="option-footer">
+                            <a href="products.html" class="btn btn-accent btn-block">
+                                Explore Products
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9.3: PRODUCT CATEGORIES -->
+        <section class="section-categories">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pretitle">Structured Catalogue</span>
+                    <h2 class="section-title">Shop by Farming Category</h2>
+                    <p class="section-subtitle">
+                        Discover essential inputs categorized for soil nourishment, plant vitality, and seasonal harvest success.
+                    </p>
+                </div>
+
+                <div class="categories-grid">
+                    <a href="products.html?category=Nitrogen%20Fertilizers" class="category-card">
+                        <div class="category-icon-circle">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-name">Nitrogen Fertilizers</h3>
+                        <span class="category-count">Neem-Coated Urea (46% N)</span>
+                    </a>
+
+                    <a href="products.html?category=Phosphatic%20Fertilizers" class="category-card">
+                        <div class="category-icon-circle">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-name">Phosphatic Fertilizers</h3>
+                        <span class="category-count">DAP (18-46-0) Granules</span>
+                    </a>
+
+                    <a href="products.html?category=NPK%20Complex%20Fertilizers" class="category-card">
+                        <div class="category-icon-circle">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+                                <line x1="12" y1="9" x2="12" y2="13"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-name">NPK Complex Fertilizers</h3>
+                        <span class="category-count">10-26-26, 12-32-16 & 15-15-15</span>
+                    </a>
+
+                    <a href="products.html?category=Nitrogen,%20Phosphorus%20%26%20Sulphur%20Fertilizers" class="category-card">
+                        <div class="category-icon-circle">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="3" rx="2"/>
+                                <path d="m9 12 2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-name">Sulphur Fortified</h3>
+                        <span class="category-count">NP(S) 20-20-0-13 Formulation</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9.4: FEATURED PRODUCTS -->
+        <section class="section-products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pretitle">Verified Inputs</span>
+                    <h2 class="section-title">Featured Agricultural Products</h2>
+                    <p class="section-subtitle">
+                        Inspect verified cooperative and branded agricultural fertilizers (45 kg &amp; 50 kg packaging) available in the Kisan Kart catalogue.
+                    </p>
+                </div>
+
+                <!-- Products Grid populated dynamically -->
+                <div class="products-grid" id="featuredProductsGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="products.html" class="btn btn-secondary btn-lg">
+                        View All Products in Catalogue &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9.5: HOW IT WORKS -->
+        <section class="section-steps">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pretitle">Clear Pathways</span>
+                    <h2 class="section-title">How Kisan Kart Works</h2>
+                    <p class="section-subtitle">
+                        A seamless, farmer-friendly journey crafted for maximum transparency and clarity.
+                    </p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Share Farming Details</h3>
+                        <p>
+                            Tell us your crop name, soil type, and observed symptoms, or browse our catalogue directly to review specific fertilizer grades.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Review Options & Guidance</h3>
+                        <p>
+                            Receive tailored diagnostic insights during your advisory session, or inspect genuine packaging specs and add items to your cart.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Reserve & Confirm</h3>
+                        <p>
+                            Obtain your advisory reference receipt or submit a verified pre-order reservation with delivery details for priority allocation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9.6: TRUST AND VALUE SECTION -->
+        <section class="section-why">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pretitle">Platform Commitment</span>
+                    <h2 class="section-title">Why Kisan Kart?</h2>
+                    <p class="section-subtitle">
+                        Built to solve the agricultural challenge between purchasing blindly and seeking timely expert guidance.
+                    </p>
+                </div>
+
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg width="26" height="26" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <h3>Two Convenient Routes</h3>
+                        <p>
+                            Never forces a farmer to buy products when they need advice, and never forces a knowledgeable farmer to endure consultations when they just need fertilizers.
+                        </p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg width="26" height="26" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/>
+                            </svg>
+                        </div>
+                        <h3>Organized Discovery</h3>
+                        <p>
+                            Categorized nutrient grades, manufacturer distinction, and clear packaging information help farmers make informed decisions.
+                        </p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg width="26" height="26" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <h3>Structured Concern Description</h3>
+                        <p>
+                            A thoughtful questionnaire collecting soil type, growth stage, and crop challenge parameters so guidance discussions are focused and productive.
+                        </p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg width="26" height="26" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <h3>Authentic Packaging Assets</h3>
+                        <p>
+                            Direct visual representations of real cooperative packaging (such as IFFCO & Coromandel Gromor) preserving original branding integrity.
+                        </p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg width="26" height="26" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <h3>Persistent Cart Reservation</h3>
+                        <p>
+                            Add products as you browse without losing selections between page switches, built using standard browser storage mechanisms.
+                        </p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg width="26" height="26" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"/>
+                            </svg>
+                        </div>
+                        <h3>Straightforward User Experience</h3>
+                        <p>
+                            High contrast, clean typography, large touch targets, and understandable labels tailored specifically for agricultural accessibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9.7: FINAL CALL TO ACTION -->
+        <section class="section-cta">
+            <div class="container">
+                <span class="cta-tagline">Kisan Kart Platform</span>
+                <h2 class="cta-title">Your Farming Needs, One Cart.</h2>
+                <p class="cta-desc">
+                    Get the right guidance for your crops or shop fertilizers directly from our organized catalogue.
+                </p>
+                <div class="cta-buttons">
+                    <a href="guidance.html" class="btn btn-primary btn-lg">
+                        Get Expert Guidance
+                    </a>
+                    <a href="products.html" class="btn btn-secondary btn-lg">
+                        Shop Products Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 17: ABOUT US -->
+        <section id="about-us" class="section-about" style="padding: 4.5rem 0; background-color: #ffffff; border-top: 1px solid var(--color-border);">
+            <div class="container" style="max-width: 860px; text-align: center;">
+                <span class="section-pretitle">About Kisan Kart</span>
+                <h2 class="section-title">Bringing Agricultural Discovery & Guidance Together</h2>
+                <p style="font-size: 1.05rem; line-height: 1.7; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+                    Kisan Kart brings agricultural product discovery and farming guidance together in one convenient place.
+                </p>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+                    Growers can interact with our platform in two straightforward ways: request structured guidance about their farming needs to understand soil and crop requirements, or explore agricultural products directly with verified nutrient ratios and transparent manufacturer packaging.
+                </p>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-muted);">
+                    Whether preparing for basal fertilization, addressing mid-season deficiencies, or booking an agronomy consultation, Kisan Kart empowers growers with clarity and genuine agricultural choices.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- SECTION 9.8: FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="assets/images/kisan-kart-logo.png" 
+                             alt="Kisan Kart Official Logo" 
+                             class="footer-logo-img">
+                        <div>
+                            <div class="footer-brand-title">Kisan Kart</div>
+                            <div class="footer-brand-tagline">Your Farming Needs, One Cart.</div>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        A farmer-friendly platform providing structured crop guidance and authentic agricultural product discovery.
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div>
+                    <h4 class="footer-heading">Platform Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="guidance.html">Get Expert Guidance</a></li>
+                        <li><a href="consultation.html">Consultation Form</a></li>
+                        <li><a href="products.html">Shop Products</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                        <li><a href="index.html#about-us">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Categories -->
+                <div>
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?category=Fertilizers">Fertilizers</a></li>
+                        <li><a href="products.html?category=Crop%20Nutrition">Crop Nutrition</a></li>
+                        <li><a href="products.html">Soil Care</a></li>
+                        <li><a href="products.html">Farming Essentials</a></li>
+                        <li><a href="products.html?brand=IFFCO">IFFCO Products</a></li>
+                        <li><a href="products.html?brand=Coromandel%20Gromor">Coromandel Gromor</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support & Assistance -->
+                <div>
+                    <h4 class="footer-heading">Farmer Support</h4>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Farming Consultation & Guidance</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Regional Agricultural Hubs</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>support@kisankart.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div>
+                        &copy; <span id="currentYear">2026</span> Kisan Kart. All rights reserved.
+                    </div>
+                    <div style="color: #84cc16; font-weight: 600;">
+                        Kisan Kart • Your Farming Needs, One Cart
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Classic Non-Module JavaScript Files (Ordered for file:// compatibility) -->
+    <script src="scripts/products.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var grid = document.getElementById("featuredProductsGrid");
+            if (grid && window.KisanProducts) {
+                var featured = window.KisanProducts.getFeatured();
+                grid.innerHTML = featured.map(function(p) {
+                    return window.createProductCardHTML(p);
+                }).join("");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout & Order Confirmation | Kisan Kart</title>
+    <meta name="description" content="Enter delivery address and review selected agricultural inputs for order reservation on Kisan Kart.">
+    
+    <!-- Local Stylesheets (Direct file:// Compatible) -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <aside class="top-notice-banner" aria-label="Official Platform Notice">
+        <div class="container">
+            <div class="banner-item">
+                <span class="banner-badge">Secure Order</span>
+                <span>Direct Farmer Delivery & Agricultural Input Allocation</span>
+            </div>
+            <div class="banner-item">
+                <span>Verified Cooperative Packaging • Farm Gate Logistics</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- SHARED SITE HEADER -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-link" title="Kisan Kart Homepage">
+                <img src="assets/images/kisan-kart-logo.png" 
+                     alt="Kisan Kart Logo" 
+                     class="brand-logo-img">
+                <div class="brand-meta">
+                    <span class="brand-title">Kisan Kart</span>
+                    <span class="brand-tagline">Your Farming Needs, One Cart.</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="guidance.html" class="nav-link">Get Expert Guidance</a></li>
+                    <li><a href="products.html" class="nav-link">Shop Products</a></li>
+                    <li><a href="index.html#about-us" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="cart.html" class="header-cart-btn" id="headerCartBtn" aria-label="Shopping Cart">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.24-1a1 1 0 00-.986-.78H3z"/>
+                    </svg>
+                    <span class="cart-count-badge" id="cartCountBadge" style="display: none;">0</span>
+                </a>
+
+                <a href="cart.html" class="btn btn-secondary btn-sm">
+                    Back to Cart
+                </a>
+
+                <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="consultation-form-wrap">
+        <div class="container">
+            
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumb-list" style="color: var(--color-text-muted); margin-bottom: 2rem;" aria-label="Breadcrumb">
+                <a href="index.html" style="color: var(--color-primary);">Home</a>
+                <span>/</span>
+                <a href="cart.html" style="color: var(--color-primary);">Cart</a>
+                <span>/</span>
+                <span>Checkout</span>
+            </nav>
+
+            <div class="cart-layout-grid" style="padding-top: 0;">
+                
+                <!-- CHECKOUT FORM -->
+                <div class="cart-items-card">
+                    <h2 style="font-size: 1.5rem; color: var(--color-text-main); margin-bottom: 0.5rem;">
+                        Delivery Details & Input Reservation
+                    </h2>
+                    <p style="font-size: 0.9125rem; color: var(--color-text-muted); margin-bottom: 1.75rem;">
+                        Enter your delivery address to register your agricultural input reservation and confirm bag allocation.
+                    </p>
+
+                    <form id="checkoutForm" novalidate>
+                        
+                        <!-- Customer Info -->
+                        <div class="form-section-title">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" style="color: var(--color-primary);">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Recipient & Farmer Information</span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customerName" class="form-label">Full Name <span class="required">*</span></label>
+                                <input type="text" id="customerName" class="form-control" placeholder="Recipient's Name" required>
+                                <div class="form-error-msg">Please enter your full name.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customerPhone" class="form-label">Mobile Number <span class="required">*</span></label>
+                                <input type="tel" id="customerPhone" class="form-control" placeholder="10-digit mobile number" maxlength="10" required>
+                                <div class="form-error-msg">Please enter a valid 10-digit mobile number.</div>
+                            </div>
+                        </div>
+
+                        <!-- Delivery Destination -->
+                        <div class="form-section-title" style="margin-top: 1.75rem;">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" style="color: var(--color-primary);">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Delivery Destination</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerAddress" class="form-label">Complete Street Address / Farm Road <span class="required">*</span></label>
+                            <textarea id="customerAddress" class="form-control" rows="2" placeholder="House/Farm number, Village, Post office, Landmark..." required></textarea>
+                            <div class="form-error-msg">Please provide your complete delivery address.</div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customerState" class="form-label">State <span class="required">*</span></label>
+                                <input type="text" id="customerState" class="form-control" placeholder="e.g. Punjab, Uttar Pradesh" required>
+                                <div class="form-error-msg">Please enter your state.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customerPin" class="form-label">Postal PIN Code <span class="required">*</span></label>
+                                <input type="text" id="customerPin" class="form-control" placeholder="6-digit PIN code" maxlength="6" required>
+                                <div class="form-error-msg">Please enter a valid 6-digit postal PIN code.</div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method Preference -->
+                        <div class="form-section-title" style="margin-top: 1.75rem;">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" style="color: var(--color-primary);">
+                                <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                                <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Payment & Billing Method</span>
+                        </div>
+
+                        <div class="radio-group" style="margin-bottom: 2rem;">
+                            <label class="custom-option-label">
+                                <input type="radio" name="paymentMethod" value="Pay on Delivery Confirmation" checked>
+                                <div class="option-text-group">
+                                    <h5>Pay on Delivery Confirmation</h5>
+                                    <p>Settle payment upon physical bag arrival and inspection at your farm gate.</p>
+                                </div>
+                            </label>
+
+                            <label class="custom-option-label">
+                                <input type="radio" name="paymentMethod" value="Kisan Credit Card (KCC Settlement)">
+                                <div class="option-text-group">
+                                    <h5>Kisan Credit Card (KCC Settlement)</h5>
+                                    <p>Utilize institutional agricultural credit financing through your cooperative account.</p>
+                                </div>
+                            </label>
+
+                            <label class="custom-option-label">
+                                <input type="radio" name="paymentMethod" value="Direct UPI / Bank Transfer">
+                                <div class="option-text-group">
+                                    <h5>Direct UPI / Bank Transfer</h5>
+                                    <p>Digital payment confirmation upon official invoice release.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; border-top: 1px solid var(--color-border); flex-wrap: wrap; gap: 1rem;">
+                            <a href="cart.html" class="btn btn-secondary">
+                                &larr; Return to Cart
+                            </a>
+
+                            <button type="submit" class="btn btn-primary btn-lg" id="placeOrderBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Submit Order Reservation
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- ORDER ITEMS SUMMARY SIDEBAR -->
+                <aside class="cart-summary-card" aria-label="Order Items Summary">
+                    <h3 class="summary-title">Order Items</h3>
+
+                    <div id="checkoutItemsList" style="margin-bottom: 1.25rem;">
+                        <!-- Rendered by checkout.js -->
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Total Bags:</span>
+                        <strong id="checkoutTotalQty">0</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Logistics:</span>
+                        <strong>Standard Agricultural Transport</strong>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <strong id="checkoutSubtotalDisplay">Price to be confirmed</strong>
+                    </div>
+
+                    <div class="summary-total-row">
+                        <span class="summary-total-label">Final Total:</span>
+                        <span class="summary-total-value" id="checkoutTotalDisplay">Pending Confirmation</span>
+                    </div>
+
+                    <div class="info-notice-box" style="margin-top: 1rem; margin-bottom: 0; padding: 0.85rem; font-size: 0.8125rem;">
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>Transparent Pricing:</strong>
+                            <p style="margin: 0.15rem 0 0 0;">
+                                Official retail pricing and cooperative subsidies are confirmed prior to billing. Your reservation holds bag priority.
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="assets/images/kisan-kart-logo.png" alt="Kisan Kart Logo" class="footer-logo-img">
+                        <div>
+                            <div class="footer-brand-title">Kisan Kart</div>
+                            <div class="footer-brand-tagline">Your Farming Needs, One Cart.</div>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        A farmer-friendly platform providing structured crop guidance and authentic agricultural product discovery.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Platform Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="guidance.html">Get Expert Guidance</a></li>
+                        <li><a href="consultation.html">Consultation Form</a></li>
+                        <li><a href="products.html">Shop Products</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                        <li><a href="index.html#about-us">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?category=Fertilizers">Fertilizers</a></li>
+                        <li><a href="products.html?category=Crop%20Nutrition">Crop Nutrition</a></li>
+                        <li><a href="products.html">Soil Care</a></li>
+                        <li><a href="products.html">Farming Essentials</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Farmer Support</h4>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Farming Consultation & Guidance</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>support@kisankart.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div>&copy; <span id="currentYear">2026</span> Kisan Kart. All rights reserved.</div>
+                    <div style="color: #84cc16; font-weight: 600;">Kisan Kart • Your Farming Needs, One Cart</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (Direct file:// Compatible) -->
+    <script src="scripts/products.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/checkout.js"></script>
+</body>
+</html>
